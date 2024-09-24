@@ -37,6 +37,9 @@ ports:
 # docker hub
 image: matt8707/addon-ha-fusion-{arch}
 
+options:
+  hass_port: 8123
+
 schema:
   hass_url: str? #optional
   hass_port: int?
