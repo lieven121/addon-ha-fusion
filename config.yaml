@@ -38,4 +38,5 @@ ports:
 image: matt8707/addon-ha-fusion-{arch}
 
 schema:
-  hass_url?: str #optional
+  hass_url: str? #optional
+  hass_port: int?
