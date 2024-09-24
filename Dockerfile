@@ -5,14 +5,10 @@ ARG BUILD_FROM
 FROM node:22 AS builder
 WORKDIR /app
 
-ENV PNPM_HOME="/pnpm"
-ENV PATH="$PNPM_HOME:$PATH"
-RUN corepack enable
-
 ### remote
 # clone, build and remove repo example data
 RUN git clone --depth 1 https://github.com/matt8707/ha-fusion . && \
-pnpm  install && \
+  npm i --force && \
   npm run build && \
   npm prune --omit=dev && \
   rm -rf ./data/*
