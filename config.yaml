@@ -1,6 +1,6 @@
 # required configuration options
 name: Fusion
-version: 2024.7.2
+version: 2024.9.0-b1
 slug: ha_fusion_fork
 description: A modern, easy-to-use and performant custom Home Assistant dashboard
 arch:
