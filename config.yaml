@@ -36,3 +36,6 @@ ports:
 
 # docker hub
 image: matt8707/addon-ha-fusion-{arch}
+
+options:
+  hass_url?: '' #optional
