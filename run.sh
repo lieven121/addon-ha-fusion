@@ -8,6 +8,6 @@ export EXPOSED_PORT=$(bashio::addon.port "8099/tcp")
 echo "HASS_PORT: $HASS_PORT"
 echo "HASS_URL: $HASS_URL"
 echo "EXPOSED_PORT: $EXPOSED_PORT"
-echo "Starting Fusion..."
+# echo "Starting Fusion..."
 
 node server.js
