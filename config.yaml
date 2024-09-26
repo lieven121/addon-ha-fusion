@@ -39,7 +39,9 @@ ports:
 
 options:
   hass_port: 8123
+  run_as_addon: true
 
 schema:
   hass_url: str? #optional
-  hass_port: int
+  hass_port: int?
+  run_as_addon: bool
